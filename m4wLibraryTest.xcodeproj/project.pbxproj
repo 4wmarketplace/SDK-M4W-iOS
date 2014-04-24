@@ -274,7 +274,7 @@
 		DED70AB119082E860031A71F /* external libs */ = {
 			isa = PBXGroup;
 			children = (
-				DED70AD619082F0D0031A71F /* AdM4wSDK */,
+				DED70AD619082F0D0031A71F /* M4WViewSDK */,
 				DED70AB619082ECC0031A71F /* AdMobSDK */,
 				DED70AB219082EA80031A71F /* AdagioSDK */,
 			);
@@ -354,13 +354,13 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
-		DED70AD619082F0D0031A71F /* AdM4wSDK */ = {
+		DED70AD619082F0D0031A71F /* M4WViewSDK */ = {
 			isa = PBXGroup;
 			children = (
 				DED70AD719082F250031A71F /* libM4WView.a */,
 				DED70AD819082F250031A71F /* M4WView.h */,
 			);
-			name = AdM4wSDK;
+			path = M4WViewSDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
