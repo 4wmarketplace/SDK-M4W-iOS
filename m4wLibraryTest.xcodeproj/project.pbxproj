@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE4076D319097FD7009FB904 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70AF41908315C0031A71F /* CoreTelephony.framework */; };
 		DED70A7A19082E720031A71F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70A7919082E720031A71F /* Foundation.framework */; };
 		DED70A7C19082E720031A71F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70A7B19082E720031A71F /* CoreGraphics.framework */; };
 		DED70A7E19082E720031A71F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70A7D19082E720031A71F /* UIKit.framework */; };
@@ -25,37 +26,13 @@
 		DED70AD919082F250031A71F /* libM4WView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70AD719082F250031A71F /* libM4WView.a */; };
 		DED70ADE19082F880031A71F /* M4WBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DED70ADB19082F880031A71F /* M4WBannerViewController.m */; };
 		DED70ADF19082F880031A71F /* M4WInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DED70ADD19082F880031A71F /* M4WInterstitialViewController.m */; };
-		DED70AE1190830D40031A71F /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70AE0190830D40031A71F /* CoreMedia.framework */; };
-		DED70AE3190830EB0031A71F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70AE2190830EB0031A71F /* CoreData.framework */; };
 		DED70AE5190830FF0031A71F /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70AE4190830FF0031A71F /* AdSupport.framework */; };
-		DED70AE7190831060031A71F /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70AE6190831060031A71F /* Accounts.framework */; };
-		DED70AEA190831130031A71F /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70AE8190831130031A71F /* AddressBook.framework */; };
-		DED70AEB190831130031A71F /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70AE9190831130031A71F /* AddressBookUI.framework */; };
 		DED70AED1908311E0031A71F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70AEC1908311E0031A71F /* AudioToolbox.framework */; };
 		DED70AEF1908312C0031A71F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70AEE1908312C0031A71F /* AVFoundation.framework */; };
-		DED70AF1190831340031A71F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70AF0190831330031A71F /* CFNetwork.framework */; };
 		DED70AF51908315C0031A71F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70AF21908315C0031A71F /* CoreLocation.framework */; };
-		DED70AF61908315C0031A71F /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70AF31908315C0031A71F /* CoreMotion.framework */; };
-		DED70AF71908315C0031A71F /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70AF41908315C0031A71F /* CoreTelephony.framework */; };
-		DED70AFA190831640031A71F /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70AF8190831640031A71F /* EventKit.framework */; };
-		DED70AFB190831640031A71F /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70AF9190831640031A71F /* EventKitUI.framework */; };
-		DED70AFD190831740031A71F /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70AFC190831740031A71F /* iAd.framework */; };
-		DED70AFF190831850031A71F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70AFE190831850031A71F /* libsqlite3.dylib */; };
-		DED70B011908318F0031A71F /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70B001908318F0031A71F /* libxml2.dylib */; };
-		DED70B03190831970031A71F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70B02190831970031A71F /* libz.dylib */; };
-		DED70B05190831A10031A71F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70B04190831A10031A71F /* MapKit.framework */; };
-		DED70B07190831A70031A71F /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70B06190831A70031A71F /* MediaPlayer.framework */; };
 		DED70B09190831B30031A71F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70B08190831B30031A71F /* MessageUI.framework */; };
-		DED70B0B190831D10031A71F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70B0A190831D10031A71F /* MobileCoreServices.framework */; };
-		DED70B0E190831DF0031A71F /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70B0C190831DF0031A71F /* OpenAL.framework */; };
-		DED70B0F190831DF0031A71F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70B0D190831DF0031A71F /* OpenGLES.framework */; };
-		DED70B11190831E50031A71F /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70B10190831E50031A71F /* PassKit.framework */; };
-		DED70B13190831EE0031A71F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70B12190831EE0031A71F /* QuartzCore.framework */; };
-		DED70B15190831F50031A71F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70B14190831F50031A71F /* Security.framework */; };
-		DED70B17190831FB0031A71F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70B16190831FB0031A71F /* Social.framework */; };
 		DED70B19190832040031A71F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70B18190832040031A71F /* StoreKit.framework */; };
 		DED70B1B1908320B0031A71F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70B1A1908320B0031A71F /* SystemConfiguration.framework */; };
-		DED70B1D190832150031A71F /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70B1C190832150031A71F /* Twitter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,43 +134,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE4076D319097FD7009FB904 /* CoreTelephony.framework in Frameworks */,
 				DED70A7E19082E720031A71F /* UIKit.framework in Frameworks */,
-				DED70B1D190832150031A71F /* Twitter.framework in Frameworks */,
 				DED70B1B1908320B0031A71F /* SystemConfiguration.framework in Frameworks */,
 				DED70B19190832040031A71F /* StoreKit.framework in Frameworks */,
-				DED70B17190831FB0031A71F /* Social.framework in Frameworks */,
-				DED70B15190831F50031A71F /* Security.framework in Frameworks */,
-				DED70B13190831EE0031A71F /* QuartzCore.framework in Frameworks */,
-				DED70B11190831E50031A71F /* PassKit.framework in Frameworks */,
-				DED70B0E190831DF0031A71F /* OpenAL.framework in Frameworks */,
-				DED70B0F190831DF0031A71F /* OpenGLES.framework in Frameworks */,
-				DED70B0B190831D10031A71F /* MobileCoreServices.framework in Frameworks */,
 				DED70B09190831B30031A71F /* MessageUI.framework in Frameworks */,
-				DED70B07190831A70031A71F /* MediaPlayer.framework in Frameworks */,
-				DED70B05190831A10031A71F /* MapKit.framework in Frameworks */,
-				DED70B03190831970031A71F /* libz.dylib in Frameworks */,
-				DED70B011908318F0031A71F /* libxml2.dylib in Frameworks */,
-				DED70AFF190831850031A71F /* libsqlite3.dylib in Frameworks */,
-				DED70AFD190831740031A71F /* iAd.framework in Frameworks */,
-				DED70AFA190831640031A71F /* EventKit.framework in Frameworks */,
-				DED70AFB190831640031A71F /* EventKitUI.framework in Frameworks */,
 				DED70AF51908315C0031A71F /* CoreLocation.framework in Frameworks */,
-				DED70AF61908315C0031A71F /* CoreMotion.framework in Frameworks */,
-				DED70AF71908315C0031A71F /* CoreTelephony.framework in Frameworks */,
 				DED70A7C19082E720031A71F /* CoreGraphics.framework in Frameworks */,
-				DED70AF1190831340031A71F /* CFNetwork.framework in Frameworks */,
 				DED70AEF1908312C0031A71F /* AVFoundation.framework in Frameworks */,
 				DED70AED1908311E0031A71F /* AudioToolbox.framework in Frameworks */,
-				DED70AEA190831130031A71F /* AddressBook.framework in Frameworks */,
-				DED70AEB190831130031A71F /* AddressBookUI.framework in Frameworks */,
-				DED70AE7190831060031A71F /* Accounts.framework in Frameworks */,
 				DED70AE5190830FF0031A71F /* AdSupport.framework in Frameworks */,
-				DED70AE3190830EB0031A71F /* CoreData.framework in Frameworks */,
-				DED70AE1190830D40031A71F /* CoreMedia.framework in Frameworks */,
 				DED70AD919082F250031A71F /* libM4WView.a in Frameworks */,
 				DED70AB519082EA80031A71F /* libADGLibrary.a in Frameworks */,
-				DED70A7A19082E720031A71F /* Foundation.framework in Frameworks */,
 				DED70AD419082ECC0031A71F /* libGoogleAdMobAds.a in Frameworks */,
+				DED70A7A19082E720031A71F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -730,6 +684,7 @@
 				DED70AAD19082E730031A71F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DED70AAE19082E730031A71F /* Build configuration list for PBXNativeTarget "m4wLibraryTestTests" */ = {
 			isa = XCConfigurationList;
@@ -738,6 +693,7 @@
 				DED70AB019082E730031A71F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
