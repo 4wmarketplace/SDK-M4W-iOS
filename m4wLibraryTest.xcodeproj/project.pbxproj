@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DE4076D319097FD7009FB904 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70AF41908315C0031A71F /* CoreTelephony.framework */; };
+		DE6228EE19114CD10026D7B0 /* AdMobAdapterBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6228EB19114CD10026D7B0 /* AdMobAdapterBannerViewController.m */; };
+		DE6228EF19114CD10026D7B0 /* AdMobAdapterInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6228ED19114CD10026D7B0 /* AdMobAdapterInterstitialViewController.m */; };
 		DED70A7A19082E720031A71F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70A7919082E720031A71F /* Foundation.framework */; };
 		DED70A7C19082E720031A71F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70A7B19082E720031A71F /* CoreGraphics.framework */; };
 		DED70A7E19082E720031A71F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED70A7D19082E720031A71F /* UIKit.framework */; };
@@ -46,6 +48,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE6228EA19114CD10026D7B0 /* AdMobAdapterBannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdMobAdapterBannerViewController.h; sourceTree = "<group>"; };
+		DE6228EB19114CD10026D7B0 /* AdMobAdapterBannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdMobAdapterBannerViewController.m; sourceTree = "<group>"; };
+		DE6228EC19114CD10026D7B0 /* AdMobAdapterInterstitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdMobAdapterInterstitialViewController.h; sourceTree = "<group>"; };
+		DE6228ED19114CD10026D7B0 /* AdMobAdapterInterstitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdMobAdapterInterstitialViewController.m; sourceTree = "<group>"; };
 		DED70A7619082E720031A71F /* m4wLibraryTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = m4wLibraryTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DED70A7919082E720031A71F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DED70A7B19082E720031A71F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -236,6 +242,10 @@
 				DED70ADB19082F880031A71F /* M4WBannerViewController.m */,
 				DED70ADC19082F880031A71F /* M4WInterstitialViewController.h */,
 				DED70ADD19082F880031A71F /* M4WInterstitialViewController.m */,
+				DE6228EA19114CD10026D7B0 /* AdMobAdapterBannerViewController.h */,
+				DE6228EB19114CD10026D7B0 /* AdMobAdapterBannerViewController.m */,
+				DE6228EC19114CD10026D7B0 /* AdMobAdapterInterstitialViewController.h */,
+				DE6228ED19114CD10026D7B0 /* AdMobAdapterInterstitialViewController.m */,
 				DED70A9419082E720031A71F /* Images.xcassets */,
 				DED70A8019082E720031A71F /* Supporting Files */,
 			);
@@ -460,8 +470,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE6228EF19114CD10026D7B0 /* AdMobAdapterInterstitialViewController.m in Sources */,
 				DED70ADE19082F880031A71F /* M4WBannerViewController.m in Sources */,
 				DED70A8A19082E720031A71F /* AppDelegate.m in Sources */,
+				DE6228EE19114CD10026D7B0 /* AdMobAdapterBannerViewController.m in Sources */,
 				DED70ADF19082F880031A71F /* M4WInterstitialViewController.m in Sources */,
 				DED70A8619082E720031A71F /* main.m in Sources */,
 			);
