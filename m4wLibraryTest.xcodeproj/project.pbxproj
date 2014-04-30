@@ -596,6 +596,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/AdagioSDK",
 					"$(PROJECT_DIR)/AdMobSDK",
+					"$(PROJECT_DIR)/M4WViewSDK",
 					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = "-ObjC";
@@ -617,6 +618,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/AdagioSDK",
 					"$(PROJECT_DIR)/AdMobSDK",
+					"$(PROJECT_DIR)/M4WViewSDK",
 					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = "-ObjC";
