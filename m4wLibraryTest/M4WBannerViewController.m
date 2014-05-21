@@ -57,6 +57,7 @@
     
     self.m4wBanner.refreshRate = 40;
     
+    // ensure that there are no other subviews in the bannerZone
     for (UIView *aView in self.vBannerZone.subviews) {
         [aView removeFromSuperview];
     }
