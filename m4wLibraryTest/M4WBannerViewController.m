@@ -10,7 +10,7 @@
 
 @interface M4WBannerViewController ()
 
-@property (nonatomic, retain) M4WView *m4wBanner;
+@property (nonatomic, strong) M4WView *m4wBanner;
 
 @end
 
@@ -32,21 +32,27 @@
 
 -(void)viewWillAppear:(BOOL)animated {
     // [self.m4wBanner loadRequest];
+    [self setupM4WBanner];
 }
 
 - (IBAction)attivaButtonPressed:(id)sender {
     
     [self.tfIdentifier resignFirstResponder];
-    
+    [self setupM4WBanner];
+}
+
+-(void)setupM4WBanner {
     CGRect bannerFrame = CGRectMake(0, 0, 320, 50);
-    NSLog(@"bannerFrame %@", NSStringFromCGRect(bannerFrame));
+    NSLog(@"bannerFrame             %@", NSStringFromCGRect(bannerFrame));
+    NSLog(@"self.vBannerZone frame  %@", NSStringFromCGRect(self.vBannerZone.frame));
+    NSLog(@"self.vBannerZone bounds %@", NSStringFromCGRect(self.vBannerZone.bounds));
     
     // JSON M4W identifier
     NSDictionary *initDict = @{@"identifier":self.tfIdentifier.text,
                                @"bannerId":@"4wm_apt_ani_ios_ft",
                                @"intestitialId":@"4wm_apt_ani_ios_in"};
     
-    self.m4wBanner = [[M4WView alloc] initWithFrame:bannerFrame
+    self.m4wBanner = [[M4WView alloc] initWithFrame:self.vBannerZone.bounds
                                        interstitial:NO
                                            delegate:self
                                  rootViewController:self

@@ -29,10 +29,17 @@
     
 }
 
+-(void) viewWillAppear:(BOOL)animated {
+    [self setupAdMobBanner];
+}
+
 - (IBAction)attivaButtonPressed:(id)sender {
     
     [self.tfAdUnitId resignFirstResponder];
-    
+    [self setupAdMobBanner];
+}
+
+-(void)setupAdMobBanner {
     // Create a view of the standard size at the top of the screen.
     // Available AdSize constants are explained in GADAdSize.h.
     bannerView_ = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
@@ -55,6 +62,7 @@
     
     // Initiate a generic request to load it with an ad.
     [bannerView_ loadRequest: request];
-    
 }
+
+
 @end
