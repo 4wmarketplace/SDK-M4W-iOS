@@ -19,6 +19,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1) {
         //iOS7 compatibility
         self.edgesForExtendedLayout = UIRectEdgeNone;
@@ -31,7 +32,7 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated {
-    // [self.m4wBanner loadRequest];
+    [super viewWillAppear:animated];
     [self setupM4WBanner];
 }
 
