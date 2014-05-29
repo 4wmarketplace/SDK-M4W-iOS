@@ -17,11 +17,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    /*
     if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1) {
         //iOS7 compatibility
         self.edgesForExtendedLayout = UIRectEdgeNone;
     }
-    
+    */
     [super viewDidLoad];
     
     self.tfAdunitId.text = @"ca-app-pub-1248321676074385/6726390352";

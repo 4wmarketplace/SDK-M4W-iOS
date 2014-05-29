@@ -19,12 +19,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1) {
-        //iOS7 compatibility
-        self.edgesForExtendedLayout = UIRectEdgeNone;
-    }
-	
     // Do any additional setup after loading the view, typically from a nib.
     // This frame will position the banner at the bottom/middle of our main view.
     
