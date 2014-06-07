@@ -39,7 +39,7 @@
 - (void)m4WViewClickDidOccurInAd:(M4WView *)anM4WView;
 
 // Your Custom Event object should call this when the user "clicks" shrinking a banner
-- (void)m4WViewDidShrinked:(M4WView *)anM4WView;
+- (void)m4WViewShrinked:(M4WView *)anM4WView;
 
 // Your Custom Event object should call this when the user "clicks" expanding a banner
 // toSize includes the newsize that will used when expanded
@@ -47,19 +47,20 @@
 
 // Your Custom Event object should call this when the user expanded a banner
 // toSize includes the newsize expanded
-- (void)m4WViewDidExpanded:(M4WView *)anM4WView toSize:(CGSize)newSize;
+- (void)m4WView:(M4WView *)anM4WView expandedToSize:(CGSize)newSize;
 
 // Your Custom Event object should call this when the user "clicks" shrinking a banner
 // toSize includes the newsize shrinked
-- (void)m4WViewDidShrinked:(M4WView *)anM4WView toSize:(CGSize)newSize;
+- (void)m4WView:(M4WView *)anM4WView shrinkedToSize:(CGSize)newSize;
 
 @end
 
-@interface M4WView : UIView {
-    unsigned int refreshRate;
-}
+@class M4WViewParameters;
+
+@interface M4WView : UIView
 
 @property(nonatomic) unsigned int refreshRate;
+@property (nonatomic, weak, readonly) UIViewController *viewRootViewcontroller;
 @property(nonatomic, weak) id<M4WViewDelegate> m4WViewDelegate;
 
 - (void)loadRequest;
@@ -69,6 +70,16 @@
        interstitial:(BOOL)isInterstitial
            delegate:(id<M4WViewDelegate>)delegate
  rootViewController:(UIViewController *)rootViewcontroller
-         initParams:(NSDictionary *)initParams;
+         parameters:(M4WViewParameters *)m4wParameters;
+
+@end
+
+@interface M4WViewParameters: NSObject
+
+@property (nonatomic, strong, readonly) NSString *identifier;
+@property (nonatomic, strong, readonly) NSString *bannerId;
+@property (nonatomic, strong, readonly) NSString *intestitialId;
+
+-(id)initWithIdentifier:(NSString *)identifier bannerId:(NSString *)bannerId intestitialId:(NSString *)intestitialId;
 
 @end

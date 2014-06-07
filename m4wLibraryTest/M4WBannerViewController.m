@@ -43,15 +43,15 @@
     NSLog(@"self.vBannerZone bounds %@", NSStringFromCGRect(self.vBannerZone.bounds));
     
     // JSON M4W identifier
-    NSDictionary *initDict = @{@"identifier":self.tfIdentifier.text,
-                               @"bannerId":@"4wm_apt_ani_ios_ft",
-                               @"intestitialId":@"4wm_apt_ani_ios_in"};
+    M4WViewParameters *parameters = [[M4WViewParameters alloc] initWithIdentifier:self.tfIdentifier.text
+                                                                         bannerId:@"4wm_apt_ani_ios_ft"
+                                                                    intestitialId:@"4wm_apt_ani_ios_in"];
     
     self.m4wBanner = [[M4WView alloc] initWithFrame:self.vBannerZone.bounds
                                        interstitial:NO
                                            delegate:self
                                  rootViewController:self
-                                         initParams:initDict];
+                                         parameters:parameters];
     
     // Optionally, add a background color to ensure you have correctly positioned your banner
     [self.m4wBanner setBackgroundColor:[UIColor redColor]];
@@ -145,7 +145,7 @@
 }
 
 // Your Custom Event object should call this when the user "clicks" shrinking a banner
-- (void)m4WViewDidShrinked:(M4WView *)anM4WView{
+- (void)m4WViewShrinked:(M4WView *)anM4WView{
     NSLog(@"M4WBannerViewController %@",NSStringFromSelector(_cmd));
 }
 
@@ -157,13 +157,13 @@
 
 // Your Custom Event object should call this when the user expanded a banner
 // toSize includes the newsize expanded
-- (void)m4WViewDidExpanded:(M4WView *)anM4WView toSize:(CGSize)newSize{
+- (void)m4WView:(M4WView *)anM4WView expandedToSize:(CGSize)newSize{
     NSLog(@"M4WBannerViewController %@",NSStringFromSelector(_cmd));
 }
 
 // Your Custom Event object should call this when the user "clicks" shrinking a banner
 // toSize includes the newsize shrinked
-- (void)m4WViewDidShrinked:(M4WView *)anM4WView toSize:(CGSize)newSize{
+- (void)m4WView:(M4WView *)anM4WView shrinkedToSize:(CGSize)newSize{
     NSLog(@"M4WBannerViewController %@",NSStringFromSelector(_cmd));
 }
 
